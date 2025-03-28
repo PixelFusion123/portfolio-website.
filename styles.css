@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f8c291;
+}
+
+.btn {
+    background: #2d98da;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.courses, .about, .contact, .Comment {
+    padding: 20px;
+    text-align: center;
+}
+
+.course {
+    background: #6a89cc;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.contact input, .contact textarea {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+
+.Comment {
+    background: #4fa5a8;
+    color: rgb(165, 74, 74);
+    padding: 16px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+
+button {
+    background: #38ada9;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
