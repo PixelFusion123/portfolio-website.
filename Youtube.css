@@ -1,0 +1,85 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #ff3b30;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.search-bar {
+    width: 40%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #202020;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #ff3b30;
+}
+
+/* Main Video Section */
+main {
+    margin-left: 220px;
+    padding: 80px 20px 20px;
+}
+
+.video-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    width: 250px;
+}
+
+.video img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ff7eb3, #ff758c, #ff6f91, #ff8a5c);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Animated Heading */
+.animated-heading {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Animated Subtext */
+.animated-subtext {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+/* Butterfly Animation */
+.butterfly-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.butterfly {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    animation: fly 8s linear infinite;
+}
+
+/* Animations */
+@keyframes glow {
+    from { text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5); }
+    to { text-shadow: 6px 6px 20px rgba(255, 255, 255, 1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.5; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(10px); }
+}
+
+@keyframes fly {
+    0% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+    50% { transform: translateY(-100px) translateX(50px) rotate(20deg); }
+    100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+}
